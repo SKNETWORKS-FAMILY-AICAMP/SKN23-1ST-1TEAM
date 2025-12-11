@@ -1,25 +1,53 @@
-# 이차저차: 실거래 기반 중고차 가치 평가 솔루션
+# 🚘 SKN23-1ST
+ **이차저차: 실거래 기반 중고차 가치 평가 솔루션**
+
+# ✅ 프로젝트 목표
+중고차 시장의 구전 중심 문화를 벗어나 객관적 데이터 기반으로 초보 구매자도 신뢰 가능하고,
+선택할 수 있는 중고차 구매 지원 솔루션 제공.
 
 
-<div>
-  <h2>   팀 이름: 않이이개외돼조</h2>
-</div>
+## ✅ 팀 소개 및 팀원 소개
+### 않이이개외돼조 ?
+✔️ 이번 프로젝트는 중고차 시세 데이터를 시각화하여 
+누구나 원하는 차량을 쉽게 선택할 수 있도록 돕기 위해 기획되었습니다.
 
-```
-
- **"딜러 믿지마\! 인터넷 믿어\!"**
-
-```
------
-
-
-## 1\. 팀 소개
-
-| <img width="675" height="675" alt="정용희" src="https://github.com/user-attachments/assets/26e83aff-9169-4ffa-a28e-2d201c1694f1" /> <br> 정용희 | ![양창일](https://github.com/user-attachments/assets/10474968-c8ef-4e16-9179-e2a63d32f8c2)<br> 양창일 |  ![김지우](https://github.com/user-attachments/assets/141df313-40bd-4b78-8ec7-1a5a3db71e10) <br> 김지우 | ![정희영](https://github.com/user-attachments/assets/5d870743-1b73-4aa8-884d-e8d60eb2ad56) <br> 정희영 |  
-| :---: | :---: | :--- | :---: |
-| **PM/QA** | **Crawling**<br>(Team Leader)| **Front** | **Back** |
+| ![양창일](https://github.com/user-attachments/assets/10474968-c8ef-4e16-9179-e2a63d32f8c2)|  ![지우](https://github.com/user-attachments/assets/ca9b8a5e-4838-4674-aa1a-1ce0b35f370d)| ![정희영](https://github.com/user-attachments/assets/5d870743-1b73-4aa8-884d-e8d60eb2ad56)| <img width="675" height="675" alt="정용희" src="https://github.com/user-attachments/assets/26e83aff-9169-4ffa-a28e-2d201c1694f1" />|  
+| :---: | :---: | :---: | :---: |
+| 양창일 | 김지우 | 정희영 | 정용희 |
+| **팀장**/PM/BE | FE | BE | QA |
+| <a href="https://github.com/clachic00"><img src="https://img.shields.io/badge/GitHub-clachic00-green?logo=github"></a> | <a href="https://github.com/jooooww"><img src="https://img.shields.io/badge/GitHub-jooooww-blue?logo=github"></a> | <a href="https://github.com/JUNGHEEYOUNG9090"><img src="https://img.shields.io/badge/GitHub-JUNGHEEYOUNG9090-orange?logo=github"></a> | <a href="https://github.com/jungyonghi"><img src="https://img.shields.io/badge/GitHub-jungyonghi-brown?logo=github"></a> | 
 
 -----
+
+## 2\. 프로젝트 개요
+
+### 프로젝트 명
+
+**이차저차: 실거래 기반 중고차 가치 평가 솔루션**
+
+> "딜러 믿지마\! 인터넷 믿어\!"
+
+### 프로젝트 소개
+
+중고차 시장 구전적인 신뢰에서 탈피하여 데이터 기반으로 처음 중고차를 구매하는 사람들에게 도움을 주는 솔루션 입니다.
+
+### 프로젝트 필요성
+
+  * **시장의 성장:** 최초 구매자들 60\~70퍼센트가 중고차를 첫 차량으로 선택하고 있고 경기에 따라 합리적인 가격으로 구매 가능한 중고차로 시선이 집중되고 있습니다.
+  * **정보의 불균형:** 하지만 초보 구매자들은 차량 전문 지식이 부족하고 딜러가 제시하는 가격이나 불투명한 정보에 의존해야 하는 구조적 한계가 관찰 되었습니다.
+  * **데이터 신뢰의 부재:** 기존 플랫폼의 정보는 판매자의 주관과 실제로 방문을 기반으로 하고 있어 사용되는 리소스가 과다 할 수 있습니다.
+
+### 기존 서비스 분석
+
+기존 시장의 주요 플레이어들은 각기 다른 강점을 가지고 있으나, 일반 소비자를 위한 '객관적 데이터 분석' 측면에서는 아쉬움이 존재했습니다.
+
+| 경쟁사 (플랫폼) | 트래픽 (Monthly) | 가치 (Value) | 비고 |
+| :--- | :--- | :--- | :--- |
+| **엔카 (Encar)** | 104K | $12.2K | 경쟁사 대비 많은 트래픽 |
+| **KB차차차** | 37.3K | $4.9K | 금융권의 자회사로 안정적인 서비스 |
+| **헤이딜러** | 6.2K | $1.7K | APP기반 쉬운 접근 구조 |
+| **카이즈유 (Data Source)** | 1.9K | $246 | 데이터 전문성은 매우 높으나 B2B 중심이라 일반 소비자의 접근성 및 가독성이 낮음 |
+
 
 ## 2\. 프로젝트 개요
 
