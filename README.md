@@ -9,12 +9,9 @@
 
 ## 1\. 팀 소개
 
-| 이름 | 역할 | 담당 파트 | GitHub |
+| <img width="675" height="675" alt="정용희" src="https://github.com/user-attachments/assets/26e83aff-9169-4ffa-a28e-2d201c1694f1" /> <br> 정용희 | ![양창일](https://github.com/user-attachments/assets/10474968-c8ef-4e16-9179-e2a63d32f8c2)<br> 양창일 |  ![김지우](https://github.com/user-attachments/assets/141df313-40bd-4b78-8ec7-1a5a3db71e10) <br> 김지우 | ![정희영](https://github.com/user-attachments/assets/5d870743-1b73-4aa8-884d-e8d60eb2ad56) <br> 정희영 |  
 | :---: | :---: | :--- | :---: |
-| **양창일**<br>(Team Leader) | **Crawling** | • 기획 총괄 및 데이터 파이프라인 설계<br>• 카이즈유/엔카 데이터 크롤링 및 전처리 | @User |
-| **김지우** | **Front-end** | • Streamlit 기반 웹 애플리케이션 UI/UX 구현<br>• 모바일 적응형 UI 및 사용자 경험(UX) 최적화<br>• 데이터 시각화 및 대시보드 차트 구성 | @User |
-| **정희영** | **Back-end** | • DB 스키마(ERD) 설계 및 SQL 최적화 | @User |
-| **정용희** | **PM / QA / 발표** | • 발표 준비<br>• 컨텐츠 알고리즘 구현<br>• QC | @User |
+| **PM/QA** | **Crawling**<br>(Team Leader)| **Front** | **Back** |
 
 -----
 
