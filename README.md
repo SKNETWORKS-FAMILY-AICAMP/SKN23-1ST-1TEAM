@@ -102,6 +102,11 @@
 
 ### 기획 와이어 시트
 
+![캡처](images/blueprint.png)
+![캡처](images/detail_page.png)
+![캡처](images/compare_page.png)
+![캡처](images/contents.png)
+
   * Detail page
   * compare\_page
   * compare contents
