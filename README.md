@@ -103,13 +103,14 @@
 ### 기획 와이어 시트
 
 ![캡처](images/blueprint.png)
+
 ![캡처](images/detail_page.png)
+
 ![캡처](images/compare_page.png)
+
 ![캡처](images/contents.png)
 
-  * Detail page
-  * compare\_page
-  * compare contents
+
 
 -----
 
@@ -138,11 +139,11 @@
 ## 7\. 수행 결과
 
 ### 1\) 메인 대시보드
-
+![캡처](images/detail_page_fi.png)
 ### 2\) 차량 비교
-
+![캡처](images/compare_pagefi.png)
 ### 3\) FAQ
-
+![캡처](images/faqfi.png)
 -----
 
 ## 8\. 트러블 슈팅
