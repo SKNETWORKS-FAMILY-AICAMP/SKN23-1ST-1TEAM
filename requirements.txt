@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+mysql-connector-python
+altair
+requests
+Pillow
+beautifulsoup4
+streamlit-aggrid
