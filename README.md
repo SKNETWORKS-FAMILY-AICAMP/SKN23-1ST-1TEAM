@@ -194,7 +194,7 @@ cost_b = (annual_km / eff_b) * get_current_price(row_b['fuel'], prices)
 # ~~~~~~~~~~^~~~~~~
 ```
 
-  * **✅ 해결 방안:** null 체크 및 0으로 나누기 체크를 통해 예외의 경우 1로 대입하여 정상화
+  * ** 해결 방안:** null 체크 및 0으로 나누기 체크를 통해 예외의 경우 1로 대입하여 정상화
 
 <!-- end list -->
 
