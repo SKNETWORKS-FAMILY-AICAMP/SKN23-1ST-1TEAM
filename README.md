@@ -1,4 +1,4 @@
-# 🚘💨 SKN23-1ST
+## 🚘💨 SKN23-1ST
  **이차저차: 실거래 기반 중고차 가치 평가 솔루션**
 
 ## ✅ 팀 소개 및 팀원 소개
@@ -11,6 +11,8 @@
 | 양창일 | 김지우 | 정희영 | 정용희 |
 | **팀장**/PM/BE | FE | BE | QA |
 | <a href="https://github.com/clachic00"><img src="https://img.shields.io/badge/GitHub-clachic00-green?logo=github"></a> | <a href="https://github.com/jooooww"><img src="https://img.shields.io/badge/GitHub-jooooww-blue?logo=github"></a> | <a href="https://github.com/JUNGHEEYOUNG9090"><img src="https://img.shields.io/badge/GitHub-JUNGHEEYOUNG9090-orange?logo=github"></a> | <a href="https://github.com/jungyonghi"><img src="https://img.shields.io/badge/GitHub-jungyonghi-brown?logo=github"></a> | 
+|기획 총괄 및 데이터 파이프라인 설계 / 카이즈유&엔카 데이터 크롤링 및 전처리|Streamlit 기반 웹 애플리케이션 UI/UX 구현/모바일 적응형 UI 및 사용자 경험(UX) 최적화/데이터 시각화 및 대시보드 차트 구성|DB 스키마(ERD) 설계 및 SQL 최적화|발표준비/컨텐츠 알고리즘 구현/QC|
+
 
 -----
 
@@ -19,24 +21,20 @@
 **이차저차: 실거래 기반 중고차 가치 평가 솔루션**
 
 ## ✅ 프로젝트 소개
-중고차 시장 구전적인 신뢰에서 탈피하여 데이터 기반으로 처음 중고차를 구매하는 사람들에게 도움을 주는 솔루션 입니다.
-
-## ✅ 프로젝트 목표 
 중고차 시장의 구전 중심 문화를 벗어나 객관적 데이터 기반으로 초보 구매자도 신뢰 가능하고, 선택할 수 있는 중고차 구매 지원 솔루션 제공.
 
+## ✅ 프로젝트 목표 
   * **정보 비대칭 해소:** 국토교통부 원천 데이터를 가공한 카이즈유를 크롤링하여 데이터 신뢰성 확보
   * **투자 관점의 구매 지원:** 첫차의 유지 기간이 길지 않는 소비 패턴을 반영하여 감가상각 및 손익분기 예측을 통해 실제 비용을 기준으로 합리적 의사결정을 돕습니다.
   * **데이터 통합:** 정성적 데이터인 헤이딜러와 정량적 데이터인 카이즈유 데이터를 동시 제공.
 
-
 ## ✅ 프로젝트 필요성
-  * **시장의 성장:** 최초 구매자들 60\~70퍼센트가 중고차를 첫 차량으로 선택하고 있고 경기에 따라 합리적인 가격으로 구매 가능한 중고차로 시선이 집중되고 있습니다.
-  * **정보의 불균형:** 하지만 초보 구매자들은 차량 전문 지식이 부족하고 딜러가 제시하는 가격이나 불투명한 정보에 의존해야 하는 구조적 한계가 관찰 되었습니다.
-  * **데이터 신뢰의 부재:** 기존 플랫폼의 정보는 판매자의 주관과 실제로 방문을 기반으로 하고 있어 사용되는 리소스가 과다 할 수 있습니다.
+  * **시장의 성장:** 최초 구매자들 60~70%가 중고차를 첫 차량으로 선택하고 있고 경기에 따라 합리적인 가격으로 구매 가능한 중고차로 시선이 집중된다.
+  * **정보의 불균형:** 하지만 초보 구매자들은 차량 전문 지식이 부족하고 딜러가 제시하는 가격이나 불투명한 정보에 의존해야 하는 구조적 한계가 관찰 되었다.
+  * **데이터 신뢰의 부재:** 기존 플랫폼의 정보는 판매자의 주관과 실제로 방문을 기반으로 하고 있어 사용되는 리소스가 과다 할 수 있다.
 
 ## ✅ 기존 서비스 분석
-
-기존 시장의 주요 플레이어들은 각기 다른 강점을 가지고 있으나, 일반 소비자를 위한 '객관적 데이터 분석' 측면에서는 아쉬움이 존재했습니다.
+기존 시장의 주요 플레이어들은 각기 다른 강점을 가지고 있으나, 일반 소비자를 위한 '객관적 데이터 분석' 측면에서는 아쉬움이 존재했다.
 
 | 경쟁사 (플랫폼) | 트래픽 (Monthly) | 가치 (Value) | 비고 |
 | :--- | :--- | :--- | :--- |
@@ -47,31 +45,50 @@
 
   * **키 포인트:** 카이즈유 데이터는 훌륭하나 사용자 친화적인 부분이 부족하다.
   * 본 프로젝트는 \*\*데이터 전문성(카이즈유)\*\*과 \*\*대중성(엔카)\*\*을 결합하여, 일반 소비자도 비교적 신뢰할 수 있는 지표를 통해 의사결정을 돕는 솔루션으로 기획되었습니다.
-
-
-
+-----
+# 2. 프로젝트 설계
+## ✅ 프로젝트 구조
+```bash
+SQL
+├── carClassDtlList.sql
+├── car_grade_data.sql
+├── selectPrice.sql
+├── selectDistancePrice.sql
+├── selectGender.sql
+├── selectRegion.sql
+└── selectAge.sql
+app.py
+├── checking.py
+│   ├── rating.py
+│   ├── card.py
+│   ├── chart_future.py
+│   ├── chart_mileage.py
+│   ├── chart_age.py
+│   ├── chart_gender.py
+│   └── chart_region.py
+└── comparison.py
+    ├── card.py
+    └── comparison_data.py
+```
 -----
 
 ##  ✅ 기술 스택
 
-## Backend / ETL
+### Backend / ETL
 ![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-43B02A?style=for-the-badge&logo=BeautifulSoup&logoColor=white)
 
-
-
-## Database
+### Database
 ![MySQL](https://img.shields.io/badge/MySQL_8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## Dashboard / Visualization
+### Dashboard / Visualization
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
-
-## VCS
+### VCS
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
 | 분류 | 기술 | 설명 |
@@ -107,7 +124,6 @@
 -----
 
 ## ✅ 요구 기능 목록
-
   * **차량 조회 기능:** 차량을 최소한의 설정으로 조회 할 수 있게 할 것.
   * **시세 시각화:** 조회된 차량에 대한 가격 변동 추이를 그래프를 이용해 제공 할 것.
   * **감가상각 예측:** 조회된 차량 구매 시 추후 예상 잔존 가치(%)를 수치와 그래프로 보여줄 것.
@@ -122,8 +138,7 @@
 ![캡처](/images/ERDFi.png)
 
 ### 구조 및 관계 설명
-
-본 프로젝트의 데이터베이스는 중고차 가치 평가 및 예측 서비스 제공을 위해 계층적인 구조로 설계되었습니다.
+본 프로젝트의 데이터베이스는 중고차 가치 평가 및 예측 서비스 제공을 위해 **계층적인 구조**로 설계되었습니다.
 
   * **계층형 데이터 구조:** `CAR (차량)` -\> `GRADE (등급)` -\> `PRICE (가격) 및 각종 통계 데이터`
 
@@ -142,7 +157,6 @@
 
 ## ✅ 주요 기능
 ### 1\) 차량 시세 확인
-* 필수입력 : 
 ![캡처](images/detail_page_fi.png)
 ### 2\) 차량 비교
 ![캡처](images/compare_pagefi.png)
@@ -150,7 +164,7 @@
 ![캡처](images/faqfi.png)
 -----
 
-## 트러블 슈팅
+## ✅ 트러블 슈팅
 
 ### 1\) 동적 페이지 크롤링 및 데이터 분석 난관 극복
 
@@ -218,12 +232,11 @@ except:
 
 -----
 
-## 비고
-
+## ✅ 비고
   * **모바일 적응형 UI 구현:** 사용자 접근성을 높이기 위해 CSS 기반의 미디어 쿼리를 활용하여 모바일 환경에서도 최적화된 화면을 제공하도록 UI/UX를 개선했습니다. (코드 레벨에서의 세부적인 UI 최적화 진행)
   * **데이터 관리 효율화:** 초기 데이터 관리에 엑셀을 고려했으나, 대량 데이터 처리 및 협업 과정에서의 비효율성 특히 늦은 업로드 속도를 체감하고, CSV와 DB 중심의 데이터 파이프라인을 구축하여 생산성을 높였습니다.
 
-### 기능 구현 우선순위 분석표
+### 📈 기능 구현 우선순위 분석표
 
 이후 기능 구현 가능 목표
 
@@ -233,7 +246,7 @@ except:
 
 -----
 
-### 한 줄 회고
+## ✏️ 한 줄 회고
 
   * **양창일:** "시간이 촉박한 가운데 브레인스토밍 단계부터 데이터 통합 기획의 중요성을 절감했습니다. 특히, 상이한 사이트(카이즈유, 엔카)의 데이터를 사용자에게 하나의 화면에서 보여주기 위해 발생한 예상치 못한 예외 상황(Irregular)들을 해결하며, 기획의 정밀함이 개발 효율에 미치는 영향을 깊이 이해하게 되었습니다."
   * **김지우:** "단순한 기능 구현을 넘어 \*\*사용자 경험(UX)\*\*에 집중했습니다. 차량 스펙 시트를 읽기 어려워하는 일반 사용자를 타겟으로 하여, Streamlit의 한계 내에서도 최대한 직관적인 UI를 구현하려 노력했습니다. 첫 프로젝트였지만 좋은 팀원들 덕분에 기술적 난관(CSV to DB 전환, 레이아웃 깨짐 등)을 극복하고 완주할 수 있었습니다."
@@ -242,7 +255,7 @@ except:
 
 -----
 
-## 11\. 참고문헌/자료
+## 📖 참고문헌/자료
 
   * [CEO Message] 한국 자동차 시장에서 중고차 시장이 가지는 의미
       * 국내 중고차 시장 규모가 2024년 약 240만 대로 신차 시장(160만 대)을 앞지르며, 프리미엄 차종의 거래가 활발해지고 있음을 확인.
