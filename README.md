@@ -175,7 +175,7 @@ Crawling
   * **상황:** 엔카, 이차어때 등 데이터 소스 사이트가 Vue.js 기반의 동적 웹 페이지로 구성되어 있고, 수집해야 할 데이터 양이 방대함.
   * **문제:**
       * 초기 Selenium 사용 시 수집 속도 저하로 대량 데이터 확보 불가.
-      * 수집된 데이터 테이블 구조가 복잡하여 분석 및 정제에 16시간 이상 소요되는 등 난이도가 높음.
+      * 수집된 데이터 테이블 구조가 복잡하여 분석 및 정제에 18시간 이상 소요되는 등 난이도가 높음.
   * **✅ 해결 방안:**
       * **기술적 접근 전환:** 웹사이트의 네트워크 트래픽 분석을 통해 API 호출 시점과 JSON 데이터 흐름을 포착, Requests와 BeautifulSoup으로 직접 API를 호출하여 속도를 개선했습니다.
       * **분석 효율화:** 복잡한 데이터 구조를 파악한 후, Python Pandas를 활용하여 전처리 로직을 모듈화하고 자동화하여 분석 시간을 단축했습니다. 코딩 자체보다는 데이터 구조 이해와 분석 설계에 집중하여 문제를 해결했습니다.
@@ -198,43 +198,6 @@ data = {
 res = s.post(url, headers=headers, data=data) # POST 요청으로 JSON 데이터 확보
 # 이후 데이터 평탄화 - CSV로 저장 후 DB에 작성
 ```
-
-### 2\) gradeFuelRate 데이터 결측치 처리 (Data Handling)
-
-  * **상황:** 연비 비교 분석을 위해 차량 등급별 연비 정보(gradeFuelRate)를 조회하는 과정에서 일부 차종의 해당 컬럼 데이터가 NULL 또는 0인 경우가 발견됨.
-
-**오류 내용:**
-
-```python
-ZeroDivisionError: division by zero
-Traceback:
-File "C:\Users\Playdata\Documents\myproject\venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
-result = func()
-# ... (중략)
-File "C:\Users\Playdata\Documents\myproject\app2.py", line 218, in main
-cost_b = (annual_km / eff_b) * get_current_price(row_b['fuel'], prices)
-# ~~~~~~~~~~^~~~~~~
-```
-
-  * ** 해결 방안:** null 체크 및 0으로 나누기 체크를 통해 예외의 경우 1로 대입하여 정상화
-
-<!-- end list -->
-
-```python
-try:
-    eff_b = float(row_b['gradeFuelRate'])
-except:
-    eff_b = 1
-
-price_b = float(row_b['gradeUsedCarPrice'])
-
-try:
-    cost_b = (annual_km / eff_b) * get_current_price(row_b['fuel'], prices)
-except:
-    cost_b = (annual_km / 1) * get_current_price(row_b['fuel'], prices)
-```
-
------
 
 ## ✅ 비고
   * **모바일 적응형 UI 구현:** 사용자 접근성을 높이기 위해 CSS 기반의 미디어 쿼리를 활용하여 모바일 환경에서도 최적화된 화면을 제공하도록 UI/UX를 개선했습니다. (코드 레벨에서의 세부적인 UI 최적화 진행)
