@@ -3,7 +3,7 @@
 
 ## ✅ 팀 소개 및 팀원 소개
 ### 않이이개외돼조 ?
-✔️ 이번 프로젝트는 중고차 시세 데이터를 시각화하여 
+✔️ 이번 프로젝트는 중고차 시세 예측 데이터를 시각화하여 
 누구나 원하는 차량을 쉽게 선택할 수 있도록 돕기 위해 기획되었습니다.
 
 | ![양창일](https://github.com/user-attachments/assets/10474968-c8ef-4e16-9179-e2a63d32f8c2)|  ![지우](https://github.com/user-attachments/assets/ca9b8a5e-4838-4674-aa1a-1ce0b35f370d)| ![정희영](https://github.com/user-attachments/assets/5d870743-1b73-4aa8-884d-e8d60eb2ad56)| <img width="675" height="675" alt="정용희" src="https://github.com/user-attachments/assets/26e83aff-9169-4ffa-a28e-2d201c1694f1" />|  
@@ -160,9 +160,9 @@ Crawling
 -----
 
 ## ✅ 주요 기능
-### 1\) 차량 시세 확인
+### 1\) 차량 시세 예측 및 거래정보 확인
 ![캡처](images/detail_page_fi.png)
-### 2\) 차량 비교
+### 2\) 차량 연비 비교
 ![캡처](images/compare_pagefi.png)
 ### 3\) 차량 FAQ
 ![캡처](images/faqfi.png)
